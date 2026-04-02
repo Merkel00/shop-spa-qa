@@ -1,24 +1,15 @@
 {
   "name": "shop-spa-qa",
   "version": "1.0.0",
-  "description": "",
+  "description": "QA automation for Shop SPA",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "playwright test",
+    "test:ui": "playwright test tests/ui",
+    "report": "playwright show-report"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Merkel00/shop-spa-qa.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Merkel00/shop-spa-qa/issues"
-  },
-  "homepage": "https://github.com/Merkel00/shop-spa-qa#readme",
   "devDependencies": {
-    "@playwright/test": "^1.58.2"
+    "@playwright/test": "^1.58.2",
+    "wait-on": "^8.0.1"
   }
 }
