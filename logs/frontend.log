@@ -1,0 +1,49 @@
+[1m[33mPrebundling has been configured but will not be used because caching has been disabled.[39m[22m
+[1m[33m
+Warning: This is a simple server for use in testing or debugging Angular applications
+locally. It hasn't been reviewed for security issues.
+
+Binding this server to an open connection can result in compromising your application or
+computer. Using a different host than the one passed to the "--host" flag might result in
+websocket connection issues.
+    [39m[22m
+[33m❯[39m Building...
+[32m✔[39m Building...
+[1mInitial chunk files[22m[2m | [22m[1mNames[22m                   [2m | [22m [1mRaw size[22m
+[32mchunk-JJDSPAN6.js[39m  [2m | [22m[2m-[22m                       [2m | [22m  [36m1.54 MB[39m[2m | [22m
+[32mmain.js[39m            [2m | [22m[2mmain[22m                    [2m | [22m [36m28.87 kB[39m[2m | [22m
+[32mstyles.css[39m         [2m | [22m[2mstyles[22m                  [2m | [22m  [36m4.19 kB[39m[2m | [22m
+[32mchunk-M7MMZBB4.js[39m  [2m | [22m[2m-[22m                       [2m | [22m  [36m3.81 kB[39m[2m | [22m
+[32mchunk-56C2C7UG.js[39m  [2m | [22m[2m-[22m                       [2m | [22m  [36m2.90 kB[39m[2m | [22m
+[32mchunk-UODKVZMA.js[39m  [2m | [22m[2m-[22m                       [2m | [22m  [36m1.55 kB[39m[2m | [22m
+[32mchunk-HIM6XLOV.js[39m  [2m | [22m[2m-[22m                       [2m | [22m  [36m1.11 kB[39m[2m | [22m
+[32mchunk-6MRLENCC.js[39m  [2m | [22m[2m-[22m                       [2m | [22m[36m685 bytes[39m[2m | [22m
+[32mchunk-B4CRS7GN.js[39m  [2m | [22m[2m-[22m                       [2m | [22m[36m141 bytes[39m[2m | [22m
+
+[1m [22m                  [2m | [22m[1mInitial total[22m           [2m | [22m  [1m1.58 MB[22m
+
+[1mLazy chunk files[22m   [2m | [22m[1mNames[22m                   [2m | [22m [1mRaw size[22m
+[32mchunk-5MTJZI2L.js[39m  [2m | [22m[2m-[22m                       [2m | [22m[36m157.01 kB[39m[2m | [22m
+[32mchunk-GO74AOXA.js[39m  [2m | [22m[2mcatalog-page[22m            [2m | [22m [36m37.10 kB[39m[2m | [22m
+[32mchunk-YUMN4Q2R.js[39m  [2m | [22m[2madmin-products-page[22m     [2m | [22m [36m28.73 kB[39m[2m | [22m
+[32mchunk-ZKDY57KK.js[39m  [2m | [22m[2mproduct-page[22m            [2m | [22m [36m23.39 kB[39m[2m | [22m
+[32mchunk-K754DS2J.js[39m  [2m | [22m[2madmin-order-details-page[22m[2m | [22m [36m22.55 kB[39m[2m | [22m
+[32mchunk-Z4CZLXLR.js[39m  [2m | [22m[2mcheckout-page[22m           [2m | [22m [36m19.56 kB[39m[2m | [22m
+[32mchunk-KDQHE5NY.js[39m  [2m | [22m[2madmin-orders-page[22m       [2m | [22m [36m17.56 kB[39m[2m | [22m
+[32mchunk-BMHD3T7I.js[39m  [2m | [22m[2mregister-page[22m           [2m | [22m [36m17.38 kB[39m[2m | [22m
+[32mchunk-5BERN2WL.js[39m  [2m | [22m[2mprofile-page[22m            [2m | [22m [36m16.58 kB[39m[2m | [22m
+[32mchunk-E22526DT.js[39m  [2m | [22m[2madmin-dashboard-page[22m    [2m | [22m [36m15.83 kB[39m[2m | [22m
+[32mchunk-6VIAMHMV.js[39m  [2m | [22m[2morders-page[22m             [2m | [22m [36m12.33 kB[39m[2m | [22m
+[32mchunk-FXERQPX6.js[39m  [2m | [22m[2mlogin-page[22m              [2m | [22m [36m10.75 kB[39m[2m | [22m
+[32mchunk-BSJIUI3U.js[39m  [2m | [22m[2mcart-page[22m               [2m | [22m  [36m8.23 kB[39m[2m | [22m
+[32mchunk-TP4L63N6.js[39m  [2m | [22m[2mnot-authorized-page[22m     [2m | [22m  [36m5.21 kB[39m[2m | [22m
+[32mchunk-PTZY55GF.js[39m  [2m | [22m[2morder-success-page[22m      [2m | [22m  [36m4.60 kB[39m[2m | [22m
+[2m...and 3 more lazy chunks files. Use "--verbose" to show all the files.[22m
+
+Application bundle generation complete. [7.741 seconds] - 2026-04-03T07:05:48.932Z
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m4200[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://10.1.0.43:[1m4200[22m/[39m
+  [32m➜[39m  [1mNetwork[22m: [36mhttp://172.18.0.1:[1m4200[22m/[39m
