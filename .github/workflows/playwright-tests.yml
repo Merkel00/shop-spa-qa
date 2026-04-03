@@ -44,7 +44,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: temurin
-          java-version: 17
+          java-version: 21
 
       - name: Install QA dependencies
         run: npm install
@@ -57,20 +57,20 @@ jobs:
         working-directory: shop-spa/backend
         run: |
           chmod +x mvnw
-          ./mvnw spring-boot:run 
+          ./mvnw spring-boot:run > backend.log 2>&1 &
       
       - name: Start frontend
         working-directory: shop-spa/frontend
         run: |
           npx ng serve --host 0.0.0.0 > frontend.log 2>&1 &
 
-      # - name: Wait for backend
-      #   run: |
-      #     npx wait-on http://127.0.0.1:8080
+      - name: Wait for backend
+        run: |
+          npx wait-on http://127.0.0.1:8080 --timeout 120000
 
       - name: Wait for frontend
         run: |
-          npx wait-on http://127.0.0.1:4200
+          npx wait-on http://127.0.0.1:4200 --timeout 12000
 
       - name: Install Playwright browsers
         run: npx playwright install --with-deps
