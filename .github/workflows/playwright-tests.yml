@@ -57,16 +57,16 @@ jobs:
         working-directory: shop-spa/backend
         run: |
           chmod +x mvnw
-          ./mvnw spring-boot:run > backend.log 2>&1 &
+          ./mvnw spring-boot:run 
       
       - name: Start frontend
         working-directory: shop-spa/frontend
         run: |
           npx ng serve --host 0.0.0.0 > frontend.log 2>&1 &
 
-      - name: Wait for backend
-        run: |
-          npx wait-on http://127.0.0.1:8080
+      # - name: Wait for backend
+      #   run: |
+      #     npx wait-on http://127.0.0.1:8080
 
       - name: Wait for frontend
         run: |
