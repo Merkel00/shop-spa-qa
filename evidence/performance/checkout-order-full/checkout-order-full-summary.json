@@ -1,0 +1,205 @@
+{
+    "metrics": {
+        "data_sent": {
+            "count": 1697505,
+            "rate": 5641.145071645988
+        },
+        "checkout_order_success": {
+            "passes": 1413,
+            "fails": 7,
+            "thresholds": {
+                "rate>0.90": false
+            },
+            "value": 0.9950704225352113
+        },
+        "data_received": {
+            "count": 16728603,
+            "rate": 55592.45856063592
+        },
+        "http_reqs": {
+            "count": 5680,
+            "rate": 18.875764140281888
+        },
+        "checkout_order_duration": {
+            "max": 30.962,
+            "p(90)": 6.275000000000001,
+            "p(95)": 7.638199999999996,
+            "avg": 4.542274647887327,
+            "min": 1.926,
+            "med": 4.061
+        },
+        "vus": {
+            "value": 5,
+            "min": 0,
+            "max": 12
+        },
+        "http_req_duration": {
+            "avg": 36.980749999999894,
+            "min": 0.876,
+            "med": 5.331,
+            "max": 765.94,
+            "p(90)": 130.78310000000002,
+            "p(95)": 138.7101,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "http_req_receiving": {
+            "min": 0.008,
+            "med": 0.049,
+            "max": 2.584,
+            "p(90)": 0.147,
+            "p(95)": 0.19304999999999975,
+            "avg": 0.07310176056337986
+        },
+        "vus_max": {
+            "min": 20,
+            "max": 20,
+            "value": 20
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "iteration_duration": {
+            "min": 135.283,
+            "med": 1144.755,
+            "max": 1835.807583,
+            "p(90)": 1161.0158917,
+            "p(95)": 1171.98417535,
+            "avg": 1144.6278110401422
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 138.7101,
+            "avg": 36.980749999999894,
+            "min": 0.876,
+            "med": 5.331,
+            "max": 765.94,
+            "p(90)": 130.78310000000002
+        },
+        "http_req_sending": {
+            "p(95)": 0.051,
+            "avg": 0.020503345070422917,
+            "min": 0.002,
+            "med": 0.013,
+            "max": 1.29,
+            "p(90)": 0.03910000000000013
+        },
+        "http_req_waiting": {
+            "p(95)": 138.6253,
+            "avg": 36.88714489436615,
+            "min": 0.851,
+            "med": 5.225,
+            "max": 765.853,
+            "p(90)": 130.7103
+        },
+        "checks": {
+            "passes": 12766,
+            "fails": 14,
+            "value": 0.9989045383411581
+        },
+        "iterations": {
+            "count": 1420,
+            "rate": 4.718941035070472
+        },
+        "http_req_failed": {
+            "fails": 5680,
+            "passes": 0,
+            "thresholds": {
+                "rate<0.10": false
+            },
+            "value": 0
+        },
+        "http_req_connecting": {
+            "avg": 0.005568485915492959,
+            "min": 0,
+            "med": 0,
+            "max": 1.204,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "http_req_blocked": {
+            "avg": 0.012948063380281786,
+            "min": 0,
+            "med": 0.003,
+            "max": 1.469,
+            "p(90)": 0.013,
+            "p(95)": 0.016
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "products request succeeded": {
+                    "name": "products request succeeded",
+                    "path": "::products request succeeded",
+                    "id": "5caf52b7241f860b7b184157dbdded77",
+                    "passes": 1420,
+                    "fails": 0
+                },
+                "selected product exists": {
+                    "passes": 1420,
+                    "fails": 0,
+                    "name": "selected product exists",
+                    "path": "::selected product exists",
+                    "id": "80d6dfcadb8d922fb799c2c698f71683"
+                },
+                "registration status is 201": {
+                    "passes": 1420,
+                    "fails": 0,
+                    "name": "registration status is 201",
+                    "path": "::registration status is 201",
+                    "id": "24bdf1ae690f8a04ae94d4d2f8ddab2b"
+                },
+                "registration response contains token": {
+                    "id": "8b281f78acc8f62f92f571dc6ec6bcd5",
+                    "passes": 1420,
+                    "fails": 0,
+                    "name": "registration response contains token",
+                    "path": "::registration response contains token"
+                },
+                "add to cart succeeded": {
+                    "id": "bd16a866e0e0ee20df8b8d8394879721",
+                    "passes": 1420,
+                    "fails": 0,
+                    "name": "add to cart succeeded",
+                    "path": "::add to cart succeeded"
+                },
+                "order creation succeeded": {
+                    "passes": 1420,
+                    "fails": 0,
+                    "name": "order creation succeeded",
+                    "path": "::order creation succeeded",
+                    "id": "4c7e6fa0c3fad7dfeeaf0d0eae828a64"
+                },
+                "order response contains id": {
+                    "id": "ed6fe94776f0278da5b04d7cd14b0ea4",
+                    "passes": 1413,
+                    "fails": 7,
+                    "name": "order response contains id",
+                    "path": "::order response contains id"
+                },
+                "order response contains status": {
+                    "fails": 0,
+                    "name": "order response contains status",
+                    "path": "::order response contains status",
+                    "id": "cd587b5c65dae24659a1e8458a0528af",
+                    "passes": 1420
+                },
+                "order response contains total": {
+                    "fails": 7,
+                    "name": "order response contains total",
+                    "path": "::order response contains total",
+                    "id": "dd49a559c4355a8ca6ce610ee0fe0fc9",
+                    "passes": 1413
+                }
+            },
+        "name": "",
+        "path": ""
+    }
+}

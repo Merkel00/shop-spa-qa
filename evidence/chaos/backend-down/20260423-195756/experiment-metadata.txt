@@ -1,0 +1,6 @@
+scenario name: C1 Backend Down
+backend port: 8080
+downtime seconds: 30
+base url: http://localhost:8080
+frontend url: http://localhost:4200
+ui probes enabled: true

@@ -1,0 +1,6 @@
+scenario name: C3 Latency / Slowdown
+frontend url: http://localhost:4200
+backend url: http://localhost:8080
+delay enabled: true
+delay ms value: 2500
+targeted path: order creation / checkout flow

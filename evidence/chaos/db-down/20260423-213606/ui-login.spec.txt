@@ -1,0 +1,11 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 tests/ui/login.spec.js:4:1 › user can sign in with valid credentials (937ms)
+
+  1 passed (2.4s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

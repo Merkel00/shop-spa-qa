@@ -1,0 +1,124 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests/ui/checkout-risk.spec.js:4:1 › guest user is redirected to login when opening checkout directly (253ms)
+  ✘  2 tests/ui/checkout-risk.spec.js:12:1 › authenticated user with an empty cart cannot place an order (5.4s)
+  ✘  3 tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount (5.7s)
+  ✘  4 tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request (5.7s)
+
+
+  1) tests/ui/checkout-risk.spec.js:12:1 › authenticated user with an empty cart cannot place an order 
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/profile|\/admin/[39m
+    Received string:  [31m"http://localhost:4200/login"[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 5000ms[22m
+    [2m    9 × unexpected value "http://localhost:4200/login"[22m
+
+
+       at helpers/shop-ui.js:16
+
+      14 |   await page.locator('input[formcontrolname="password"]').fill(TEST_PASSWORD);
+      15 |   await page.getByRole('button', { name: /sign in/i }).click();
+    > 16 |   await expect(page).toHaveURL(/\/profile|\/admin/);
+         |                      ^
+      17 | }
+      18 |
+      19 | async function addFirstCatalogItemToCart(page) {
+        at loginAsAdmin (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:16:22)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/checkout-risk.spec.js:34:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/checkout-risk-authenticate-9f875--cart-cannot-place-an-order/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/checkout-risk-authenticate-9f875--cart-cannot-place-an-order/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/checkout-risk-authenticate-9f875--cart-cannot-place-an-order/error-context.md
+
+  2) tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount 
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/profile|\/admin/[39m
+    Received string:  [31m"http://localhost:4200/login"[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 5000ms[22m
+    [2m    9 × unexpected value "http://localhost:4200/login"[22m
+
+
+       at helpers/shop-ui.js:16
+
+      14 |   await page.locator('input[formcontrolname="password"]').fill(TEST_PASSWORD);
+      15 |   await page.getByRole('button', { name: /sign in/i }).click();
+    > 16 |   await expect(page).toHaveURL(/\/profile|\/admin/);
+         |                      ^
+      17 | }
+      18 |
+      19 | async function addFirstCatalogItemToCart(page) {
+        at loginAsAdmin (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:16:22)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/checkout-risk.spec.js:61:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/error-context.md
+
+  3) tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request ──
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/profile|\/admin/[39m
+    Received string:  [31m"http://localhost:4200/login"[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 5000ms[22m
+    [2m    9 × unexpected value "http://localhost:4200/login"[22m
+
+
+       at helpers/shop-ui.js:16
+
+      14 |   await page.locator('input[formcontrolname="password"]').fill(TEST_PASSWORD);
+      15 |   await page.getByRole('button', { name: /sign in/i }).click();
+    > 16 |   await expect(page).toHaveURL(/\/profile|\/admin/);
+         |                      ^
+      17 | }
+      18 |
+      19 | async function addFirstCatalogItemToCart(page) {
+        at loginAsAdmin (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:16:22)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/checkout-risk.spec.js:123:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/error-context.md
+
+  3 failed
+    tests/ui/checkout-risk.spec.js:12:1 › authenticated user with an empty cart cannot place an order 
+    tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount 
+    tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request ───
+  1 passed (20.6s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

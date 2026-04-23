@@ -1,0 +1,2 @@
+COMMAND   PID          USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+node    64087 marlen.nuraly   29u  IPv6 0x20a12f46df1a61fa      0t0  TCP localhost:4200 (LISTEN)

@@ -1,0 +1,163 @@
+{
+    "metrics": {
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 4024,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "auth_login_duration": {
+            "max": 1233.124,
+            "p(90)": 180.8806,
+            "p(95)": 197.39704999999998,
+            "avg": 149.53166177932434,
+            "min": 83.495,
+            "med": 147.7355
+        },
+        "vus": {
+            "max": 40,
+            "value": 10,
+            "min": 0
+        },
+        "iteration_duration": {
+            "med": 1149.463625,
+            "max": 2234.612917,
+            "p(90)": 1184.4692502,
+            "p(95)": 1200.10010625,
+            "avg": 1151.717479411034,
+            "min": 1084.133458
+        },
+        "http_req_duration": {
+            "avg": 149.53166177932434,
+            "min": 83.495,
+            "med": 147.7355,
+            "max": 1233.124,
+            "p(90)": 180.8806,
+            "p(95)": 197.39704999999998,
+            "thresholds": {
+                "p(95)<1500": false
+            }
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(95)": 197.39704999999998,
+            "avg": 149.53166177932434,
+            "min": 83.495,
+            "med": 147.7355,
+            "max": 1233.124,
+            "p(90)": 180.8806
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "http_req_receiving": {
+            "avg": 0.10553031809145069,
+            "min": 0.008,
+            "med": 0.05,
+            "max": 16.221,
+            "p(90)": 0.159,
+            "p(95)": 0.22884999999999983
+        },
+        "http_req_blocked": {
+            "min": 0,
+            "med": 0.006,
+            "max": 8.344,
+            "p(90)": 0.014,
+            "p(95)": 0.018,
+            "avg": 0.03297862823061647
+        },
+        "http_req_connecting": {
+            "min": 0,
+            "med": 0,
+            "max": 6.421,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0.01779995029821074
+        },
+        "data_sent": {
+            "rate": 1872.5356655013215,
+            "count": 740416
+        },
+        "vus_max": {
+            "value": 65,
+            "min": 65,
+            "max": 65
+        },
+        "http_req_sending": {
+            "avg": 0.03997340954274374,
+            "min": 0.003,
+            "med": 0.023,
+            "max": 7.937,
+            "p(90)": 0.054,
+            "p(95)": 0.073
+        },
+        "iterations": {
+            "count": 4024,
+            "rate": 10.176824269028922
+        },
+        "data_received": {
+            "count": 2644148,
+            "rate": 6687.134576864882
+        },
+        "auth_login_success": {
+            "fails": 0,
+            "passes": 4024,
+            "thresholds": {
+                "rate>0.95": false
+            },
+            "value": 1
+        },
+        "http_reqs": {
+            "count": 4024,
+            "rate": 10.176824269028922
+        },
+        "checks": {
+            "passes": 12072,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_waiting": {
+            "avg": 149.38615805168982,
+            "min": 83.457,
+            "med": 147.5455,
+            "max": 1232.99,
+            "p(90)": 180.7944,
+            "p(95)": 197.1856
+        }
+    },
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "status is 200": {
+                    "name": "status is 200",
+                    "path": "::status is 200",
+                    "id": "6210a8cd14cd70477eba5c5e4cb3fb5f",
+                    "passes": 4024,
+                    "fails": 0
+                },
+                "response JSON contains token": {
+                    "path": "::response JSON contains token",
+                    "id": "b372b4bd0e9d56f29b3116dc977591be",
+                    "passes": 4024,
+                    "fails": 0,
+                    "name": "response JSON contains token"
+                },
+                "response JSON contains user": {
+                    "fails": 0,
+                    "name": "response JSON contains user",
+                    "path": "::response JSON contains user",
+                    "id": "16c4814acb6fb41f651babba13af2be2",
+                    "passes": 4024
+                }
+            },
+        "name": "",
+        "path": ""
+    }
+}

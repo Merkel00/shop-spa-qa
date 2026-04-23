@@ -1,0 +1,13 @@
+timestamp,phase,url,http_status,total_time_seconds,succeeded
+2026-04-23 21:36:07 +0500,baseline,http://localhost:8080/api/auth/register,201,0.092204,true
+2026-04-23 21:36:08 +0500,downtime,http://localhost:8080/api/auth/register,201,0.093949,true
+2026-04-23 21:36:10 +0500,downtime,http://localhost:8080/api/auth/register,201,0.094496,true
+2026-04-23 21:36:12 +0500,downtime,http://localhost:8080/api/auth/register,201,0.089856,true
+2026-04-23 21:36:14 +0500,downtime,http://localhost:8080/api/auth/register,201,0.093920,true
+2026-04-23 21:37:40 +0500,downtime,http://localhost:8080/api/auth/register,201,23.487365,true
+2026-04-23 21:37:42 +0500,downtime,http://localhost:8080/api/auth/register,201,0.088870,true
+2026-04-23 21:37:45 +0500,downtime,http://localhost:8080/api/auth/register,201,0.097892,true
+2026-04-23 21:37:47 +0500,downtime,http://localhost:8080/api/auth/register,201,0.088022,true
+2026-04-23 21:37:49 +0500,downtime,http://localhost:8080/api/auth/register,201,0.088505,true
+2026-04-23 21:37:52 +0500,downtime,http://localhost:8080/api/auth/register,201,0.150205,true
+2026-04-23 21:38:13 +0500,recovery,http://localhost:8080/api/auth/register,201,0.121456,true

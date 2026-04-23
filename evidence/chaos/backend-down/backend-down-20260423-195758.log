@@ -1,0 +1,6 @@
+start time: 2026-04-23 19:57:58 +0500
+backend port: 8080
+downtime seconds: 30
+detected backend PID: 64276
+kill action timestamp: 2026-04-23 19:57:58 +0500
+planned recovery timestamp: 2026-04-23 19:58:28 +0500

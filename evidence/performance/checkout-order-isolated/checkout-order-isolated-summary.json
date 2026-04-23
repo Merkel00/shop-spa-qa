@@ -1,0 +1,205 @@
+{
+    "metrics": {
+        "checkout_order_duration": {
+            "avg": 5.073716981132077,
+            "min": 3.162,
+            "med": 4.725,
+            "max": 16.86,
+            "p(90)": 6.5956,
+            "p(95)": 7.2528999999999995
+        },
+        "vus_max": {
+            "max": 3,
+            "value": 3,
+            "min": 3
+        },
+        "checkout_order_success": {
+            "passes": 159,
+            "fails": 0,
+            "thresholds": {
+                "rate>0.90": false
+            },
+            "value": 1
+        },
+        "http_req_waiting": {
+            "avg": 35.038724842767294,
+            "min": 2.837,
+            "med": 5.461,
+            "max": 142.413,
+            "p(90)": 124.55300000000001,
+            "p(95)": 125.90549999999999
+        },
+        "http_req_tls_handshaking": {
+            "avg": 0,
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "vus": {
+            "value": 3,
+            "min": 3,
+            "max": 3
+        },
+        "http_req_sending": {
+            "avg": 0.0279606918238993,
+            "min": 0.003,
+            "med": 0.017,
+            "max": 1.182,
+            "p(90)": 0.044,
+            "p(95)": 0.064
+        },
+        "iteration_duration": {
+            "min": 1133.481416,
+            "med": 1141.219917,
+            "max": 1203.185208,
+            "p(90)": 1147.150984,
+            "p(95)": 1150.6945083,
+            "avg": 1142.681822037737
+        },
+        "iterations": {
+            "count": 159,
+            "rate": 2.6252638885540804
+        },
+        "http_req_blocked": {
+            "p(95)": 0.016,
+            "avg": 0.019893081761006303,
+            "min": 0,
+            "med": 0.004,
+            "max": 1.614,
+            "p(90)": 0.014
+        },
+        "http_req_connecting": {
+            "p(95)": 0,
+            "avg": 0.006062893081761007,
+            "min": 0,
+            "med": 0,
+            "max": 0.551,
+            "p(90)": 0
+        },
+        "data_sent": {
+            "count": 189324,
+            "rate": 3125.946292054168
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 124.641,
+            "p(95)": 126.02574999999999,
+            "avg": 35.147372641509435,
+            "min": 2.857,
+            "med": 5.54,
+            "max": 142.461
+        },
+        "http_req_duration": {
+            "avg": 35.147372641509435,
+            "min": 2.857,
+            "med": 5.54,
+            "max": 142.461,
+            "p(90)": 124.641,
+            "p(95)": 126.02574999999999,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "http_reqs": {
+            "count": 636,
+            "rate": 10.501055554216322
+        },
+        "http_req_receiving": {
+            "p(90)": 0.164,
+            "p(95)": 0.2259999999999999,
+            "avg": 0.08068710691823897,
+            "min": 0.01,
+            "med": 0.055,
+            "max": 1.516
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 636,
+            "thresholds": {
+                "rate<0.10": false
+            },
+            "value": 0
+        },
+        "checks": {
+            "passes": 1431,
+            "fails": 0,
+            "value": 1
+        },
+        "data_received": {
+            "count": 1870459,
+            "rate": 30883.323696358348
+        }
+    },
+    "root_group": {
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "products request succeeded": {
+                    "name": "products request succeeded",
+                    "path": "::products request succeeded",
+                    "id": "5caf52b7241f860b7b184157dbdded77",
+                    "passes": 159,
+                    "fails": 0
+                },
+                "selected product exists": {
+                    "name": "selected product exists",
+                    "path": "::selected product exists",
+                    "id": "80d6dfcadb8d922fb799c2c698f71683",
+                    "passes": 159,
+                    "fails": 0
+                },
+                "registration status is 201": {
+                    "id": "24bdf1ae690f8a04ae94d4d2f8ddab2b",
+                    "passes": 159,
+                    "fails": 0,
+                    "name": "registration status is 201",
+                    "path": "::registration status is 201"
+                },
+                "registration response contains token": {
+                    "id": "8b281f78acc8f62f92f571dc6ec6bcd5",
+                    "passes": 159,
+                    "fails": 0,
+                    "name": "registration response contains token",
+                    "path": "::registration response contains token"
+                },
+                "add to cart succeeded": {
+                    "name": "add to cart succeeded",
+                    "path": "::add to cart succeeded",
+                    "id": "bd16a866e0e0ee20df8b8d8394879721",
+                    "passes": 159,
+                    "fails": 0
+                },
+                "order creation succeeded": {
+                    "name": "order creation succeeded",
+                    "path": "::order creation succeeded",
+                    "id": "4c7e6fa0c3fad7dfeeaf0d0eae828a64",
+                    "passes": 159,
+                    "fails": 0
+                },
+                "order response contains id": {
+                    "fails": 0,
+                    "name": "order response contains id",
+                    "path": "::order response contains id",
+                    "id": "ed6fe94776f0278da5b04d7cd14b0ea4",
+                    "passes": 159
+                },
+                "order response contains status": {
+                    "name": "order response contains status",
+                    "path": "::order response contains status",
+                    "id": "cd587b5c65dae24659a1e8458a0528af",
+                    "passes": 159,
+                    "fails": 0
+                },
+                "order response contains total": {
+                    "name": "order response contains total",
+                    "path": "::order response contains total",
+                    "id": "dd49a559c4355a8ca6ce610ee0fe0fc9",
+                    "passes": 159,
+                    "fails": 0
+                }
+            },
+        "name": ""
+    }
+}

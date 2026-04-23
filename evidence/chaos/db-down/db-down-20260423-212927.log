@@ -1,0 +1,17 @@
+start time: 2026-04-23 21:29:27 +0500
+db port: 5432
+downtime seconds: 20
+detected DB PID: 938
+31241
+31252
+31255
+31256
+31257
+31258
+31259
+31260
+31261
+31262
+31263
+kill action timestamp: 2026-04-23 21:29:27 +0500
+planned recovery timestamp: 2026-04-23 21:29:47 +0500

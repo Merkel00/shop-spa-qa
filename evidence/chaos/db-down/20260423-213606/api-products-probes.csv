@@ -1,0 +1,13 @@
+timestamp,phase,url,http_status,total_time_seconds,succeeded
+2026-04-23 21:36:07 +0500,baseline,http://localhost:8080/api/products/all,200,0.018129,true
+2026-04-23 21:36:07 +0500,downtime,http://localhost:8080/api/products/all,200,0.003983,true
+2026-04-23 21:36:10 +0500,downtime,http://localhost:8080/api/products/all,200,0.003091,true
+2026-04-23 21:36:12 +0500,downtime,http://localhost:8080/api/products/all,200,0.011080,true
+2026-04-23 21:36:14 +0500,downtime,http://localhost:8080/api/products/all,200,0.002918,true
+2026-04-23 21:36:46 +0500,downtime,http://localhost:8080/api/products/all,500,30.067583,false
+2026-04-23 21:37:42 +0500,downtime,http://localhost:8080/api/products/all,200,0.015927,true
+2026-04-23 21:37:44 +0500,downtime,http://localhost:8080/api/products/all,200,0.005504,true
+2026-04-23 21:37:47 +0500,downtime,http://localhost:8080/api/products/all,200,0.006612,true
+2026-04-23 21:37:49 +0500,downtime,http://localhost:8080/api/products/all,200,0.005669,true
+2026-04-23 21:37:51 +0500,downtime,http://localhost:8080/api/products/all,200,0.005272,true
+2026-04-23 21:38:13 +0500,recovery,http://localhost:8080/api/products/all,200,0.014603,true

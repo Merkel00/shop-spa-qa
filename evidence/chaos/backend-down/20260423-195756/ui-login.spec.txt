@@ -1,0 +1,48 @@
+
+Running 1 test using 1 worker
+
+  ✘  1 tests/ui/login.spec.js:4:1 › user can sign in with valid credentials (6.0s)
+
+
+  1) tests/ui/login.spec.js:4:1 › user can sign in with valid credentials ──────────────────────────
+
+    Error: [2mexpect([22m[31mpage[39m[2m).[22mtoHaveURL[2m([22m[32mexpected[39m[2m)[22m failed
+
+    Expected pattern: [32m/\/profile|\/admin/[39m
+    Received string:  [31m"http://localhost:4200/login"[39m
+    Timeout: 5000ms
+
+    Call log:
+    [2m  - Expect "toHaveURL" with timeout 5000ms[22m
+    [2m    9 × unexpected value "http://localhost:4200/login"[22m
+
+
+       at helpers/shop-ui.js:16
+
+      14 |   await page.locator('input[formcontrolname="password"]').fill(TEST_PASSWORD);
+      15 |   await page.getByRole('button', { name: /sign in/i }).click();
+    > 16 |   await expect(page).toHaveURL(/\/profile|\/admin/);
+         |                      ^
+      17 | }
+      18 |
+      19 | async function addFirstCatalogItemToCart(page) {
+        at loginAsAdmin (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:16:22)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/login.spec.js:5:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/login-user-can-sign-in-with-valid-credentials/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/login-user-can-sign-in-with-valid-credentials/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/login-user-can-sign-in-with-valid-credentials/error-context.md
+
+  1 failed
+    tests/ui/login.spec.js:4:1 › user can sign in with valid credentials ───────────────────────────
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

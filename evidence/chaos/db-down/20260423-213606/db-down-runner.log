@@ -1,0 +1,3 @@
+Homebrew PostgreSQL service postgresql@15 was stopped.
+Manual DB restart is required: brew services start postgresql@15
+Log written to evidence/chaos/db-down/db-down-20260423-213608.log.

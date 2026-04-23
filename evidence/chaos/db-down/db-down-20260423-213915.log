@@ -1,0 +1,20 @@
+start time: 2026-04-23 21:39:15 +0500
+db port: 5432
+downtime seconds: 20
+detected DB PID: 31241
+47752
+47804
+47805
+47806
+47807
+47808
+47812
+47813
+47814
+47815
+47816
+kill action timestamp: 2026-04-23 21:39:15 +0500
+planned recovery timestamp: 2026-04-23 21:39:35 +0500
+stop method: brew services stop postgresql@15
+Stopping `postgresql@15`... (might take a while)
+==> Successfully stopped `postgresql@15` (label: homebrew.mxcl.postgresql@15)

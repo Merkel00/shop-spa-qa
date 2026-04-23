@@ -1,0 +1,92 @@
+
+Running 4 tests using 1 worker
+
+  ✓  1 tests/ui/checkout-risk.spec.js:4:1 › guest user is redirected to login when opening checkout directly (519ms)
+  ✓  2 tests/ui/checkout-risk.spec.js:12:1 › authenticated user with an empty cart cannot place an order (1.0s)
+  ✘  3 tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount (5.9s)
+  ✘  4 tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request (6.2s)
+
+
+  1) tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount 
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('button', { name: /^add to cart$/i }).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: /^add to cart$/i }).first()[22m
+
+
+       at helpers/shop-ui.js:23
+
+      21 |
+      22 |   const addToCartButton = page.getByRole('button', { name: /^add to cart$/i }).first();
+    > 23 |   await expect(addToCartButton).toBeVisible();
+         |                                 ^
+      24 |   await addToCartButton.click();
+      25 |
+      26 |   await expect(page.getByRole('status').filter({ hasText: /added to cart/i })).toBeVisible();
+        at addFirstCatalogItemToCart (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:23:33)
+        at openCheckoutWithItem (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:31:3)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/checkout-risk.spec.js:62:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/checkout-risk-invalid-prom-f2db8-d-does-not-apply-a-discount/error-context.md
+
+  2) tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request ──
+
+    Error: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m([22m[2m)[22m failed
+
+    Locator: getByRole('button', { name: /^add to cart$/i }).first()
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+    [2m  - Expect "toBeVisible" with timeout 5000ms[22m
+    [2m  - waiting for getByRole('button', { name: /^add to cart$/i }).first()[22m
+
+
+       at helpers/shop-ui.js:23
+
+      21 |
+      22 |   const addToCartButton = page.getByRole('button', { name: /^add to cart$/i }).first();
+    > 23 |   await expect(addToCartButton).toBeVisible();
+         |                                 ^
+      24 |   await addToCartButton.click();
+      25 |
+      26 |   await expect(page.getByRole('status').filter({ hasText: /added to cart/i })).toBeVisible();
+        at addFirstCatalogItemToCart (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:23:33)
+        at openCheckoutWithItem (/Users/marlen.nuraly/shop-spa-qa/tests/ui/helpers/shop-ui.js:31:3)
+        at /Users/marlen.nuraly/shop-spa-qa/tests/ui/checkout-risk.spec.js:124:3
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/checkout-risk-rapid-repeat-bfcfd-mits-only-one-order-request/error-context.md
+
+  2 failed
+    tests/ui/checkout-risk.spec.js:46:1 › invalid promo code shows validation feedback and does not apply a discount 
+    tests/ui/checkout-risk.spec.js:73:1 › rapid repeated checkout submits only one order request ───
+  2 passed (16.4s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

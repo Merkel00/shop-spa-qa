@@ -1,0 +1,11 @@
+
+Running 1 test using 1 worker
+
+  ✓  1 tests/ui/checkout.spec.js:4:1 › logged-in user can open checkout page (761ms)
+
+  1 passed (1.6s)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

@@ -1,0 +1,1 @@
+k6 v1.7.1 (commit/devel, go1.26.1, darwin/arm64)

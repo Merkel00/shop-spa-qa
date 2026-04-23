@@ -1,0 +1,3 @@
+COMMAND   PID          USER   FD   TYPE             DEVICE SIZE/OFF NODE NAME
+java    31241 marlen.nuraly   87u  IPv6 0x55627274b71dc210      0t0  TCP *:http-alt (LISTEN)
+java    31241 marlen.nuraly   92u  IPv6 0xfdad472cd4a12656      0t0  TCP localhost:http-alt->localhost:55774 (CLOSED)

@@ -1,0 +1,3 @@
+Backend process 64276 on port 8080 was stopped.
+Manual backend restart is required.
+Log written to evidence/chaos/backend-down/backend-down-20260423-195758.log.
